@@ -1,6 +1,6 @@
 pub use method::Method;
 pub use query_string::{QueryString, Value as QueryStringValue};
-pub use header_string::{HeaderString, Value as HeaderStringValue};
+pub use header::Header;
 pub use request::ParseError;
 pub use request::Request;
 pub use response::Response;
@@ -8,7 +8,7 @@ pub use status_code::StatusCode;
 
 pub mod method;
 pub mod query_string;
-pub mod header_string;
+pub mod header;
 pub mod request;
 pub mod response;
 pub mod status_code;
